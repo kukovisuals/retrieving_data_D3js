@@ -1,0 +1,56 @@
+html{
+		box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+body {
+	background-color: #343537;
+	font-family: 'Baloo Chettan 2', cursive;
+}
+
+h1{
+	padding-left: 1.5%;
+	color: white
+}
+div svg {
+	width: 100%;
+	border-top: 1px solid white;
+}
+.wrapper{
+	width: 97%;
+	float: none;
+	margin: 0 auto;
+}
+/*grid system mobile first*/
+.gainersArt{
+	display: flex;
+	flex-flow: row wrap;
+}
+.col-2{
+	margin-left: 2%;
+}
+.col-2,
+.col-3{
+	flex: 0 0 98%;
+}
+.grid2 .col-3{
+	margin-left: 2%;
+}
+ /*Mobile landscape screen size */
+@media only screen and (min-wdith: 480px){
+
+}
+@media only screen and (min-width: 900px){
+	.grid2 .col-3:first-child{
+		margin-left: 2%;
+	}
+	.col-2{
+		flex: 0 0 47%;
+	}
+	.col-3{
+		flex: 0 0 33.3%;
+	}
+}
